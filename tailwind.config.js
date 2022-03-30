@@ -8,7 +8,8 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          DEFAULT: '#D6E4FF',
+          DEFAULT: '#FF5E0E',
+          light: '#FEB700'
         },
         secondary: {
           DEFAULT: '#151515',
@@ -16,19 +17,13 @@ module.exports = {
           dark: '#000',
         },
         sideColor: {
-          DEFAULT: '#5354E2',
-          light: '#9FA0FF',
-          dark: '#080834',
+          DEFAULT: '#fff',
+          light: '#fff',
+          dark: '#FEF5F5',
         },
       },
       spacing: {
-        mini: '10%',
-        "semi-mini": '15%',
-        small: '25%',
-        medium: '50%',
-        big: '75%',
-        "semi-big": '85%',
-        SuperBig: '100%',
+        
       },
       width: {
         'sm': '640px',
@@ -49,6 +44,8 @@ module.exports = {
         '5%': '5%',
         '90vh': '90vh',
         '80vh': '80vh',
+        '55vh': '55vh',
+        '30vh': '40vh',
         '10vh': '10vh',
       },
       minWidth: {
@@ -97,9 +94,26 @@ module.exports = {
         '3/4': '75%',
         '9/10': '90%',
       },
+      boxShadow: {
+        'card': '#34D178 -4px 7px 5px, #34D178 4px 7px 5px, #34D178 0px 5px 3px'
+      },
       fontFamily: {
         primary: 'Open Sans, sans-serif',
         secondary: '',
+      },
+      animation: {
+        transL: 'slideL 500ms linear',
+        transR: 'slideR 500ms linear',
+      },
+      keyFrames: {
+        slideL: {
+          '0%': {transforom : 'translateX(-100%);', opacity: '0'},
+          '100%': {transforom : 'translateX(0%)'},
+        },
+        slideR: {
+          '0%': {transforom : 'translateX(100%)'},
+          '100%': {transforom : 'translateX(0%)'},
+        }
       }
     },
   },

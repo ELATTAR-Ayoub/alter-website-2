@@ -1,0 +1,68 @@
+@import-normalize;
+@tailwind components;
+
+@layer components {
+  .flexCenter{
+    @apply flex justify-center items-center;
+  }
+  .btn-Primary {
+    @apply bg-sideColor text-sm md:text-base text-center w-full text-primary font-semibold p-4 uppercase mx-2 md:mx-5 my-2 md:my-0 hover:bg-secondary hover:text-sideColor transition-all;
+  }
+  .memberships {
+      @apply flexCenter justify-start flex-col bg-secondary m-3;
+  }
+  .memberships {
+      min-height: 900px;
+      width: 500px
+  }
+  .memberships .container{
+      @apply flexCenter flex-col w-full text-sideColor p-3;
+  }
+  .memberships .container{
+      @apply flexCenter flex-col w-full text-sideColor p-3;
+  }
+  .memberships .container span{
+      @apply text-sm mb-12 mt-2 font-semibold;
+  }
+  .memberships .container h2{
+      @apply font-semibold text-5xl mb-8;
+  }
+  .memberships .container p{
+      @apply text-sm opacity-50 mb-3 lowercase;
+  }
+  .memberships .container p:last-of-type{
+      @apply mb-12;
+  }
+  .memberships .container hr{
+      @apply mb-3 bg-sideColor w-36;
+  }
+  .memberships .container a{
+      @apply btn-Primary hover:bg-primary hover:text-sideColor;
+  }
+  .memberships .container2{
+      @apply flexCenter flex-col justify-start w-full text-sideColor p-6 mb-3;
+  }
+  .memberships .container2{
+      height: 724px;
+  }
+  .memberships .container2 h2{
+      @apply font-semibold text-base mb-3 uppercase;
+  }
+  .memberships .container2 p{
+      @apply text-sm my-2;
+  }
+  .peak-r {
+    background: rgb(106,14,255);
+    background: linear-gradient(90deg, rgba(106,14,255,1) 0%, rgba(175,72,255,1) 100%);
+  }
+  .peak {
+    background: rgb(175,72,255);
+    background: linear-gradient(90deg, rgba(175,72,255,1) 0%, rgba(248,64,141,1) 100%);
+  }
+  .base {
+    background: rgb(248,64,141);
+    background: linear-gradient(90deg, rgba(248,64,141,1) 0%, rgba(254,0,0,1) 100%);
+  }
+};
+
+@tailwind utilities;

@@ -12,7 +12,7 @@ import WaterMark from '../WaterMark'
 const SideNav = () => {
     return (
         <div id='sideNav' className="sideNav">
-            <div className="flexCenter w-full justify-between transition-all px-8 py-4 text-base">
+            <div className="flexCenter w-full justify-between transition-all px-8 py-5 text-base">
                 {/* nav close btn */}
                 <Link href='/'>
                     <a onClick={hideNav}>
@@ -24,35 +24,35 @@ const SideNav = () => {
                 </div>
             </div>
             {/* nav header */}
-            <div className="sideNav-Links">
+            <div className="sideNav-Links uppercase">
                 <Link href="/">
                     <a onClick={hideNav}  >
                         Home
                     </a>
                 </Link>
-                <Link href="/create-asset">
+                <Link href="/locations">
                     <a onClick={hideNav}  >
-                        Sell Digital Asset
+                        Locations
                     </a>
                 </Link>
-                <Link href="/my-assets">
+                <Link href="/about-us">
                     <a onClick={hideNav}  >
-                        My Digital Assets
+                        About us
                     </a>
                 </Link>
-                <Link href="/dashboard">
+                <Link  href='/service'>
                     <a onClick={hideNav}  >
-                        My Dashboard
+                        service
+                    </a>
+                </Link>
+                <Link href='/contact-us'>
+                    <a target="_blank" onClick={hideNav}  >
+                        contact us
                     </a>
                 </Link>
                 <Link title='elattarayoub000@gmail.com' href='mailto:elattarayoub000@gmail.com'>
-                    <a onClick={hideNav}  >
-                        Contact us
-                    </a>
-                </Link>
-                <Link href='https://github.com/ELATTAR-Ayoub'>
                     <a target="_blank" onClick={hideNav}  >
-                        Dev Team
+                        dev team
                     </a>
                 </Link>
             </div>
