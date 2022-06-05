@@ -1,4 +1,4 @@
-// src 
+// srcs 
 import positivity from '../../src/illustration-gym-1.png'
 import inclusivity from '../../src/illustration-gym-2.png'
 import fun from '../../src/illustration-gym-3.png'

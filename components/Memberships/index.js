@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+// 
 const Memberships = () => {
     return (
         <div className="flexCenter items-start w-screen flex-wrap p-4">
