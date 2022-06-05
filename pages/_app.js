@@ -1,5 +1,5 @@
-import globals from '../styles/globals.css'
-import memberships from '../styles/memberships.css'
+import '../styles/globals.css'
+import '../styles/memberships.css'
 
 // components
 import Header from '../components/Header'
