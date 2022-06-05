@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import { NextResponse, NextRequest } from 'next/server';
 
+
 // components
 import Memberships from '../components/Memberships'
 import ActivitiesCard from '../components/ActivitiesCard'

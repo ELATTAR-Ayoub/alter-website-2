@@ -29,9 +29,9 @@ import running_man from '../../src/running-man-in-gym.png'
 import heavy_weight from '../../src/heavy-wheight.jpeg'
 
 
-export default function LocationsId({location}) {
+export default function LocationsId() {
 
-  const activityArr = [
+  var activityArr = [
     {
       h2: 'CARDIO, WEIGHTS & MACHINES',
       p: '',
@@ -106,26 +106,22 @@ export default function LocationsId({location}) {
     },
   ]
 
-  const data = {};
+  var data = {};
 
   const router = useRouter();
   const { id } = router.query;
 
-  if (id.toLowerCase() == 'rabat') {
+  if (id == 'rabat') {
     data.location = 'rabat';
     data.adress = 'Angle Rue Raiss Mohammed Baina Et, Boulevard Akrach, Rabat';
     data.coordinates = 'rabat';
   } 
-  else if (id.toLowerCase() == 'casablanca') {
+  else if (id == 'casablanca') {
     data.location = 'casablanca';
     data.adress = '32 Rue Al Oukhouane, Casablanca 20250';
     data.coordinates = 'rabat';
     activityArr = activityArr.splice(2,11);
   }
-  else {
-    return NextResponse.redirect('/')
-  }
-
 
   return (
     <div className='flexCenter flex-col '>

@@ -150,7 +150,7 @@
 
 
   .sliderCard {
-    @apply flexCenter flex-col w-80vw relative;
+    @apply flexCenter flex-col w-80vw relative rounded-md;
   }
   .sliderCard .card {
     @apply h-80vh md:h-sm flexCenter w-full relative;
