@@ -1,3 +1,4 @@
+// 
 const Icon = ({ icon, text, extraStyle }) => {
     return (
         <div className={'flexCenter transition-all text-sm ' + extraStyle}>
