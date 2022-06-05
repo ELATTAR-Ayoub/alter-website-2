@@ -39,33 +39,27 @@ const Footer = () => {
                     <p className="text-sideColor text-opacity-50">ALL RIGHTS RESERVED</p>
                 </div>
                 <div className='footer-links flexCenter justify-start md:justify-end flex-wrap w-1/3 mb-4'>
-                    <Link href='/my-assets'>
+                    <Link href='/locations'>
                         <a >
-                            My Digital Assets
+                        locations
                         </a>
                     </Link>
                     <span>-</span>
-                    <Link href='/create-asset'>
+                    <Link href='/about-us'>
                         <a >
-                            Sell Digital Asset
+                        about us
                         </a>
                     </Link>
                     <span>-</span>
-                    <Link href='/dashboard'>
+                    <Link href='/service'>
                         <a >
-                            Creator Dashboard
+                        service
                         </a>
                     </Link>
                     <span>-</span>
-                    <Link href='/contact-us'>
-                        <a >
-                            Contact us
-                        </a>
-                    </Link>
-                    <span>-</span>
-                    <Link title='elattarayoub000@gmail.com' href='mailto:elattarayoub000@gmail.com'>
-                        <a target='_' >
-                            Dev Team
+                    <Link href='/free-trial'>
+                        <a>
+                            free trial
                         </a>
                     </Link>
                 </div>

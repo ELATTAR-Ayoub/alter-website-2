@@ -159,9 +159,7 @@ export default function Join() {
         </div>
       </div>
 
-      <p>We Will Charge This Card Today & Use Your Bank Account for Recurring Payments.</p>
-
-      <p>We will also keep this credit card on file as a backup to your account. We will use it if we are unable to process your monthly recurring dues or annual dues to your bank account on file.</p>
+      <p>We Will Charge This Card Today & Use Your Bank Account for Recurring Payments. <br></br> We will also keep this credit card on file as a backup to your account. We will use it if we are unable to process your monthly recurring dues or annual dues to your bank account on file.</p>
 
         <div className="confirmBuy">
             <h2>Confirm Your Purchase Details</h2>

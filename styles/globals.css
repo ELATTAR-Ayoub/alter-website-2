@@ -115,7 +115,7 @@
     @apply md:w-2/5 w-full md:max-w-1/2 order-2 md:order-1;
   }
   .aboutPar .par1{
-    @apply md:w-3/4 w-full mb-4 order-1 md:order-2;
+    @apply md:w-3/4 w-full mb-4 order-1 md:order-2 p-4;
   }
   .aboutPar .par1 h2{
     @apply font-bold text-left md:text-center md:text-3xl text-2xl w-full pb-2;
@@ -149,33 +149,24 @@
 
 
 
-  /* .slider {
-    @apply  flexCenter flex-col mt-4 mb-24 w-full h-56 md:h-96 relative;
+  .sliderCard {
+    @apply flexCenter flex-col w-80vw relative;
   }
-  .slider .container {
-    @apply  w-full h-full overflow-hidden relative;
+  .sliderCard .card {
+    @apply h-80vh md:h-sm flexCenter w-full relative;
   }
-  /* .slider .container img{
-    @apply;
-  } */
-  /* .slider .container .title {
-    @apply  flexCenter items-start flex-col h-full w-1/2 absolute top-0 left-0 p-8 -translate-y-1/2  bg-primary bg-opacity-50;
+  .sliderCard .card .text{
+    @apply absolute left-0 bottom-0 p-4 w-full;
   }
-  .slider .container .title h1{
-    @apply text-sideColor font-bold lg:text-4xl sm:text-3xl text-lg textShadowPrimary md:pb-8 pb-4;
+  .sliderCard .card .text h2{
+    @apply font-bold text-primary text-2xl md:text-4xl pb-1 md:pb-3;
   }
-  .slider .container .title p{
-    @apply text-sideColor font-semibold lg:text-lg md:text-base sm:text-sm text-xs textShadowPrimary;
+  .sliderCard .card .text p{
+    @apply text-sideColor-dark text-sm md:text-lg;
   }
-  .slider .human {
-    @apply lg:w-1/2 w-2/3 absolute top-0 -right-16 -translate-y-1/2 z-20 shadow-none;
+  .sliderCard .card img{
+    @apply max-w-none w-auto md:w-80vw h-full;
   }
-  .slider .shadow {
-    @apply lg:w-1/2 w-2/3 absolute top-0 -right-16 m-2 -translate-y-1/2 z-10 opacity-50 shadow-none;
-  }
-  .slider .shadow {
-    filter: brightness(0%);
-  } */
 
   /* philosophy */
   .philosophy {
@@ -281,7 +272,7 @@
   }
 
   .confirmBuy .card h3{
-    @apply uppercase text-base pb-3 text-gray-600 font-bold;
+    @apply uppercase text-base pb-3 text-primary font-bold;
   }
 
   .confirmBuy .card p{

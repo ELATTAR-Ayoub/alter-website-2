@@ -14,7 +14,7 @@ import strong_man_doing_deadlift from '../src/strong-man-doing-deadlift-training
 export default function Locations() {
 
   return (
-    <div className='flexCenter flex-col'>
+    <div className='flexCenter flex-col pt-20'>
       <div className='flexCenter justify-start mt-4 flex-col w-screen text-sideColor text-center'>
           <div className='Hparagraph'>
             <h1>Flexible Membership Options</h1>

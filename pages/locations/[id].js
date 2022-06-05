@@ -159,9 +159,9 @@ export default function LocationsId({location}) {
         </div>
 
         <div className="w-full max-w-7xl">
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ANGLE%20RUE%20RAISS%20MOHAMMED%20BAINA%20ET,%20BOULEVARD%20AKRACH,%20RABAT&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ANGLE%20RUE%20RAISS%20MOHAMMED%20BAINA%20ET,%20BOULEVARD%20AKRACH,%20RABAT&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
               </iframe>
             </div>
             </div>

@@ -180,7 +180,10 @@ export default function Home() {
           <p>Kick your feet up! With a gym designed around you, we think you’ll love it here.</p>
         </div>
 
-        <SliderCard/>
+        <div className="slide">
+          <SliderCard />
+        </div>
+
         
         <div className='Hparagraph mt-6'>
           <span>Altíraser #2</span>

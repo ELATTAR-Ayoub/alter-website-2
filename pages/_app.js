@@ -1,7 +1,5 @@
 import '../styles/globals.css'
 import '../styles/memberships.css'
-import '../styles/slider.css'
-
 
 
 // components

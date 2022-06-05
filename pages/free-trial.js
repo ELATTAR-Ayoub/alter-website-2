@@ -115,8 +115,8 @@ export default function Join() {
                 <input type="text" name="ElName" id="ElName" placeholder='Member last name'/>
             </div>
                 <div className="form">
-                <label htmlFor="EEMAIl">EMAIl</label>
-                <input type="text" name="EEMAIl" id="EEMAIl" placeholder='exmaple@gmail.com'/>
+                <label htmlFor="EMAIl">EMAIl</label>
+                <input type="email" name="EMAIl" id="EMAIl" placeholder='exmaple@gmail.com'/>
             </div>
             <div className="form">
             <label htmlFor="phone">phone number</label>

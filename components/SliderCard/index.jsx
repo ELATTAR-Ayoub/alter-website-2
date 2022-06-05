@@ -1,88 +1,47 @@
-import React, {useEffect} from "react";
+import React from "react";
+import Slider from "react-slick";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-
-const Slider = ({ key, h1, p, bg, img }) => {
-    // document.querySelector(document).ready(function () {
-    //   for (var i = 1; i <= document.querySelector(".slider__slide").length; i++) {
-    //     document.querySelector(".slider__indicators").append(
-    //       '<div class="slider__indicator" data-slide="' + i + '"></div>'
-    //     );
-    //   }
-    //   setTimeout(function () {
-    //     document.querySelector(".slider__wrap").addClass("slider__wrap--hacked");
-    //   }, 1000);
-    // });
-    
-    // function goToSlide(number) {
-    //   document.querySelector(".slider__slide").removeClass("slider__slide--active");
-    //   document.querySelector(".slider__slide[data-slide=" + number + "]").addClass(
-    //     "slider__slide--active"
-    //   );
-    // }
-    
-    // document.querySelector(".slider__next, .go-to-next").on("click", function () {
-    //   var currentSlide = Number(document.querySelector(".slider__slide--active").data("slide"));
-    //   var totalSlides = document.querySelector(".slider__slide").length;
-    //   currentSlide++;
-    //   if (currentSlide > totalSlides) {
-    //     currentSlide = 1;
-    //   }
-    //   goToSlide(currentSlide);
-    // });
-  
-    return (
-      <div className="slider">
-        <div className="slider__slide slider__slide--active" data-slide="1">
-          <div className="slider__wrap">
-            <div className="slider__back"></div>
-          </div>
-          <div className="slider__inner">
-            <div className="slider__content">
-              <h1>GROUP FITNESS  <br/> CLASSES</h1>
-              <p>We design our clubs to give you the most awesome workouts possible. That’s why our dedicated group fitness studios are four walls of innovative, hard work, fun.</p>
-              <a className="go-to-next">next</a>
-            </div>
-          </div>
+export default function SimpleSlider() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  return (
+    <Slider className="sliderCard" {...settings}>
+      <div className="card">
+        <div className="text">
+          <h2>THINGS TO LEFT</h2>
+          <p>We’ve got all the equipment you need to sprint, jog or walk your way to your fitness goals. We’re cheering for you!</p>
         </div>
-        <div className="slider__slide" data-slide="2">
-          <div className="slider__wrap">
-            <div className="slider__back"></div>
-          </div>
-          <div className="slider__inner">
-            <div className="slider__content">
-              <h1>YOGA RELAXES  <br/> YOU</h1>
-              <p>Yoga improves strength, balance and flexibility.Yoga relaxes you, to help you sleep better, eat better, work better and live better.</p>
-              <a className="go-to-next">next</a>
-            </div>
-          </div>
-        </div>
-        <div className="slider__slide" data-slide="3">
-          <div className="slider__wrap">
-            <div className="slider__back"></div>
-          </div>
-          <div className="slider__inner">
-            <div className="slider__content">
-              <h1>MILES OF  <br/> CARDIO</h1>
-              <p>We’ve got all the equipment you need to sprint, jog or walk your way to your fitness goals. We’re cheering for you!</p>
-              <a className="go-to-next">next</a>
-            </div>
-          </div>
-        </div>
-        <div className="slider__slide" data-slide="3">
-          <div className="slider__wrap">
-            <div className="slider__back"></div>
-          </div>
-          <div className="slider__inner">
-            <div className="slider__content">
-              <h1>THINGS TO   <br/> LEFT</h1>
-              <p>Bodybuilding isn’t 90 minutes in the gym. It’s a lifestyle. We are here to be part of your lifestyle.</p>
-              <a className="go-to-next">next</a>
-            </div>
-          </div>
-        </div>
-        <div className="slider__indicators"></div>
+        <img className="max-w-none w-80vw h-full" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
       </div>
-    )
+      <div className="card">
+        <div className="text">
+          <h2>MILES OF CARDIO</h2>
+          <p>We’ve got all the equipment you need to sprint, jog or walk your way to your fitness goals. We’re cheering for you!</p>
+        </div>
+        <img className="max-w-none w-80vw h-full" src="https://images.unsplash.com/photo-1517931524326-bdd55a541177?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+      </div>
+      <div className="card">
+        <div className="text">
+          <h2>Yoga relaxes you</h2>
+          <p>Yoga improves strength, balance and flexibility.Yoga relaxes you, to help you sleep better, eat better, work better and live better.</p>
+        </div>
+        <img className="max-w-none w-80vw h-full" src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+      </div>
+      <div className="card">
+        <div className="text">
+          <h2>GROUP FITNESS CLASSES</h2>
+          <p>We design our clubs to give you the most awesome workouts possible. That’s why our dedicated group fitness studios are four walls of innovative, hard work, fun.</p>
+        </div>
+        <img className="max-w-none w-80vw h-full" src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80" alt="" />
+      </div>
+    </Slider>
+  );
 }
-
-export default Slider;
