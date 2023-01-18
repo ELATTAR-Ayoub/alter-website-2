@@ -2,6 +2,8 @@
 
 Alter is a gym located in Morocco that offers a variety of fitness classes and personal training services. This website was built with Next.js as the main framework and Tailwind CSS as the CSS framework, and is live at [Live Demo](https://statuesque-rolypoly-2fb015.netlify.app/).
 
+![design](https://i.imgur.com/lLBAKfk.jpeg)
+![marketing](https://i.imgur.com/plsVZG4.png)
 
 ## Live Demo
 
